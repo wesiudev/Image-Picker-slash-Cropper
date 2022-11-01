@@ -5,7 +5,7 @@ function Header() {
     <>
       <div className="header">
         <div className="header__wrapper">
-          <h1>Paznokietki</h1>
+          <h1>SomeSite</h1>
           <div className="header__wrapper__user">
             <img src={uservector} alt="" />
             <h4>Mój profil</h4>
