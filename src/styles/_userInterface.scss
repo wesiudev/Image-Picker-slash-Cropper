@@ -14,7 +14,7 @@
         .mobileMenuOpen{
             visibility: hidden;
         }
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width:1023px) {
             .mobileMenuOpen{
                 visibility: visible;
                 position:fixed;
@@ -46,7 +46,7 @@
         }
         
         ul{
-            @media screen and (max-width:1024px) {
+            @media screen and (max-width:1023px) {
                 position:fixed;
                 bottom:150px;
                 right:22px;
@@ -56,7 +56,7 @@
             right:0;
             margin-top: -10vh;
             li{
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width:1023px) {
                     box-sizing: border-box;
                     border-left: 1px solid rgba(128, 128, 128, 0.26); 
                     border-right: 1px solid rgba(128, 128, 128, 0.26);
@@ -73,7 +73,7 @@
                 border-top: 1px solid rgba(128, 128, 128, 0.26); 
                 &:hover{
                     background-color: rgba(128, 128, 128, 0.11);
-                    @media screen and (max-width:1024px) {
+                    @media screen and (max-width:1023px) {
                         background-color: rgb(231, 231, 231);
                     }
                 }
@@ -86,7 +86,7 @@
                     cursor: pointer;
                     font-family: 'cocolight';
                     font-size:15px;
-                    @media screen and (max-width:1024px) {
+                    @media screen and (max-width:1023px) {
                         text-align: right;
                         font-family: 'cocoregular';
                         border-bottom: 1px solid rgba(128, 128, 128, 0.26);
@@ -105,12 +105,12 @@
     }
     .feed{
         width:70%;
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width:1023px) {
             width:70%;
             margin:0 auto;
         }
         &__basicValues{
-            @media screen and (max-width:1024px) {
+            @media screen and (max-width:1023px) {
                 border:none;
             }
             border-left: 1px solid rgba(128, 128, 128, 0.26);
@@ -121,7 +121,7 @@
             .section0{
                 color: rgb(43, 43, 43);
                 .head{
-                    @media screen and (max-width:1024px) {
+                    @media screen and (max-width:1023px) {
                         flex-direction: column;
                     }
                     width:100%;
@@ -132,7 +132,7 @@
                         width:250px;
                     }
                     &__userInfo{
-                        @media screen and (max-width:1024px) {
+                        @media screen and (max-width:1023px) {
                             margin-left: 7vh;
                             width:100%;
                         }
@@ -180,7 +180,7 @@
                     }
                 }
                 .interactions{
-                    @media screen and (max-width:1024px) {
+                    @media screen and (max-width:1023px) {
                         margin-top:4vh;
                     }
                     margin-top:10vh;
@@ -195,7 +195,7 @@
                         @media screen and (min-width: 767px) and (max-width:1366px) {
                             font-size: 2.775vw;
                         }
-                        @media screen and (min-width: 1024px) and (max-width: 1367px) {
+                        @media screen and (min-width: 1023px) and (max-width: 1367px) {
                             font-size: 2vw;
                         }
                     }
@@ -205,10 +205,10 @@
                         @media screen and (max-width:766px) {
                             font-size: 3.75vw;
                         }
-                        @media screen and (min-width: 767px) and (max-width:1024px) {
+                        @media screen and (min-width: 767px) and (max-width:1023px) {
                             font-size: 2.375vw;
                         }
-                        @media screen and (min-width: 1024px) and (max-width: 1367px) {
+                        @media screen and (min-width: 1023px) and (max-width: 1367px) {
                             font-size: 1.750vw;
                         }
                     }

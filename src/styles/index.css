@@ -17,7 +17,7 @@
 .interfaceWrapper nav .mobileMenuOpen {
   visibility: hidden;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .interfaceWrapper nav {
     background-color: white;
     position: fixed;
@@ -55,7 +55,7 @@
   right: 0;
   margin-top: -10vh;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .interfaceWrapper nav ul {
     position: fixed;
     bottom: 150px;
@@ -71,7 +71,7 @@
   cursor: pointer;
   border-top: 1px solid rgba(128, 128, 128, 0.26);
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .interfaceWrapper nav ul li {
     box-sizing: border-box;
     border-left: 1px solid rgba(128, 128, 128, 0.26);
@@ -84,7 +84,7 @@
 .interfaceWrapper nav ul li:hover {
   background-color: rgba(128, 128, 128, 0.11);
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .interfaceWrapper nav ul li:hover {
     background-color: rgb(231, 231, 231);
   }
@@ -100,7 +100,7 @@
   font-size: 15px;
   text-align: right;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .interfaceWrapper nav ul li button {
     text-align: right;
     font-family: "cocoregular";
@@ -117,7 +117,7 @@
 .interfaceWrapper .feed {
   width: 70%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .interfaceWrapper .feed {
     width: 70%;
     margin: 0 auto;
@@ -130,7 +130,7 @@
   padding: 5vh 5vh;
   margin-top: 70px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .interfaceWrapper .feed__basicValues {
     border: none;
   }
@@ -144,7 +144,7 @@
   align-items: center;
   font-family: "Signika", sans-serif;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .interfaceWrapper .feed__basicValues .section0 .head {
     flex-direction: column;
   }
@@ -155,7 +155,7 @@
 .interfaceWrapper .feed__basicValues .section0 .head__userInfo {
   margin-left: 10vh;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .interfaceWrapper .feed__basicValues .section0 .head__userInfo {
     margin-left: 7vh;
     width: 100%;
@@ -206,7 +206,7 @@
   height: 100%;
   width: 100%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .interfaceWrapper .feed__basicValues .section0 .interactions {
     margin-top: 4vh;
   }
@@ -225,7 +225,7 @@
     font-size: 2.775vw;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1367px) {
+@media screen and (min-width: 1023px) and (max-width: 1367px) {
   .interfaceWrapper .feed__basicValues .section0 .interactions h1 {
     font-size: 2vw;
   }
@@ -239,12 +239,12 @@
     font-size: 3.75vw;
   }
 }
-@media screen and (min-width: 767px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .interfaceWrapper .feed__basicValues .section0 .interactions h3 {
     font-size: 2.375vw;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1367px) {
+@media screen and (min-width: 1023px) and (max-width: 1367px) {
   .interfaceWrapper .feed__basicValues .section0 .interactions h3 {
     font-size: 1.75vw;
   }
@@ -333,6 +333,7 @@
   .avatar {
     width: 200px;
     height: 200px;
+    margin: 0 auto;
   }
 }
 .avatar__fileInput {
