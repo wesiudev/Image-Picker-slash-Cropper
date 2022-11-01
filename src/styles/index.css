@@ -1,0 +1,544 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;600&display=swap");
+.interfaceWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.interfaceWrapper nav {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-family: "cocoregular";
+}
+.interfaceWrapper nav .mobileMenuOpen {
+  position: fixed;
+  right: 40px;
+  bottom: 120px;
+  border: 1px solid rgb(104, 104, 104);
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(138, 138, 138);
+  font-size: 20px;
+  font-family: "cocoregular";
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1024px) {
+  .interfaceWrapper nav {
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+  }
+}
+.interfaceWrapper nav ul {
+  width: 300px;
+  position: absolute;
+  right: 0;
+  margin-top: -10vh;
+}
+@media screen and (max-width: 1024px) {
+  .interfaceWrapper nav ul {
+    position: fixed;
+    bottom: 150px;
+    right: 22px;
+  }
+}
+.interfaceWrapper nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 20px;
+  cursor: pointer;
+  border-top: 1px solid rgba(128, 128, 128, 0.26);
+}
+@media screen and (max-width: 1024px) {
+  .interfaceWrapper nav ul li {
+    box-sizing: border-box;
+    border-left: 1px solid rgba(128, 128, 128, 0.26);
+    border-right: 1px solid rgba(128, 128, 128, 0.26);
+    background-color: white;
+    width: 250px;
+    padding: 0 40px 0 20px;
+  }
+}
+.interfaceWrapper nav ul li:hover {
+  background-color: rgba(128, 128, 128, 0.11);
+}
+@media screen and (max-width: 1024px) {
+  .interfaceWrapper nav ul li:hover {
+    background-color: rgb(231, 231, 231);
+  }
+}
+.interfaceWrapper nav ul li button {
+  border: none;
+  color: rgb(58, 58, 58);
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "cocolight";
+  font-size: 15px;
+  text-align: right;
+}
+@media screen and (max-width: 1024px) {
+  .interfaceWrapper nav ul li button {
+    text-align: right;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+  }
+}
+.interfaceWrapper nav ul li img {
+  height: 18px;
+  margin-right: 3px;
+}
+.interfaceWrapper nav ul .liCurrent {
+  border-left: 2px solid rgb(139, 146, 168);
+}
+.interfaceWrapper .feed {
+  width: 70%;
+}
+@media screen and (max-width: 1024px) {
+  .interfaceWrapper .feed {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+.interfaceWrapper .feed__basicValues {
+  border-left: 1px solid rgba(128, 128, 128, 0.26);
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 5vh;
+  margin-top: 70px;
+}
+@media screen and (max-width: 1024px) {
+  .interfaceWrapper .feed__basicValues {
+    border: none;
+  }
+}
+.interfaceWrapper .feed__basicValues .section0 {
+  color: rgb(43, 43, 43);
+}
+.interfaceWrapper .feed__basicValues .section0 .head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Signika", sans-serif;
+}
+@media screen and (max-width: 1024px) {
+  .interfaceWrapper .feed__basicValues .section0 .head {
+    flex-direction: column;
+  }
+}
+.interfaceWrapper .feed__basicValues .section0 .head__modalWrapper {
+  width: 250px;
+}
+.interfaceWrapper .feed__basicValues .section0 .head__userInfo {
+  margin-left: 10vh;
+}
+@media screen and (max-width: 1024px) {
+  .interfaceWrapper .feed__basicValues .section0 .head__userInfo {
+    margin-left: 7vh;
+    width: 100%;
+  }
+}
+.interfaceWrapper .feed__basicValues .section0 .head__userInfo h1 {
+  font-weight: 600;
+  position: relative;
+}
+.interfaceWrapper .feed__basicValues .section0 .head__userInfo h1::before {
+  position: absolute;
+  top: 7px;
+  left: -28px;
+  content: "";
+  background-image: url("../images/userTransparent.png");
+  height: 23px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.interfaceWrapper .feed__basicValues .section0 .head__userInfo__phoneNumber {
+  position: relative;
+}
+.interfaceWrapper .feed__basicValues .section0 .head__userInfo__phoneNumber::before {
+  position: absolute;
+  top: 3px;
+  left: -40px;
+  content: "+48";
+  color: rgba(128, 128, 128, 0.5);
+  font-size: 20px;
+}
+.interfaceWrapper .feed__basicValues .section0 .head__userInfo__email {
+  position: relative;
+}
+.interfaceWrapper .feed__basicValues .section0 .head__userInfo__email::before {
+  position: absolute;
+  top: 9px;
+  left: -30px;
+  content: "";
+  background-image: url("../images/envelope.png");
+  height: 15px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.interfaceWrapper .feed__basicValues .section0 .interactions {
+  margin-top: 10vh;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .interfaceWrapper .feed__basicValues .section0 .interactions {
+    margin-top: 4vh;
+  }
+}
+.interfaceWrapper .feed__basicValues .section0 .interactions h1 {
+  font-family: "cocoregular";
+  font-size: 1.375vw;
+}
+@media screen and (max-width: 766px) {
+  .interfaceWrapper .feed__basicValues .section0 .interactions h1 {
+    font-size: 3.75vw;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1366px) {
+  .interfaceWrapper .feed__basicValues .section0 .interactions h1 {
+    font-size: 2.775vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1367px) {
+  .interfaceWrapper .feed__basicValues .section0 .interactions h1 {
+    font-size: 2vw;
+  }
+}
+.interfaceWrapper .feed__basicValues .section0 .interactions h3 {
+  font-family: "cocolight";
+  font-size: 0.975vw;
+}
+@media screen and (max-width: 766px) {
+  .interfaceWrapper .feed__basicValues .section0 .interactions h3 {
+    font-size: 3.75vw;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .interfaceWrapper .feed__basicValues .section0 .interactions h3 {
+    font-size: 2.375vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1367px) {
+  .interfaceWrapper .feed__basicValues .section0 .interactions h3 {
+    font-size: 1.75vw;
+  }
+}
+.interfaceWrapper .feed__basicValues .section0 .interactions .smallAction {
+  margin: -15px 0 15px 0;
+  width: 30px;
+  height: 10px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.164);
+  position: relative;
+}
+.interfaceWrapper .feed__basicValues .section0 .interactions .smallAction div {
+  position: absolute;
+  left: -8px;
+  top: -5px;
+  background-color: rgb(199, 183, 183);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.interfaceWrapper .feed__basicValues .section0 .interactions .smallAction .activated {
+  background-color: rgb(86, 179, 86);
+  left: 17px;
+  transition: 0.3s;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(52, 52, 52);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 99;
+}
+.header__wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  z-index: 2;
+  margin-right: 7px;
+}
+.header__wrapper h1 {
+  font-size: 24px;
+  font-family: "cocoregular";
+  color: white;
+}
+.header__wrapper__user {
+  display: flex;
+  align-items: center;
+}
+.header__wrapper__user h4 {
+  font-family: "cocoregular";
+  margin-left: 5px;
+}
+.header__wrapper .link {
+  font-family: "cocoregular";
+}
+.header__wrapper img {
+  flex: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background-color: rgba(137, 43, 226, 0.502);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+}
+@media screen and (max-width: 766px) {
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+}
+.avatar__fileInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.avatar__fileInput__correction {
+  z-index: 50 !important;
+  left: 92px;
+  top: 20px;
+  position: absolute;
+  color: rgb(71, 71, 71);
+  cursor: pointer;
+}
+@media screen and (max-width: 766px) {
+  .avatar__fileInput__correction {
+    left: 65px;
+  }
+}
+.avatar__fileInput__correction__wrapper .correction {
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0 2px 0 2px;
+}
+.avatar__fileInput__correction__wrapper .correction:hover {
+  background-color: rgb(211, 211, 211);
+}
+.avatar__fileInput__correction__wrapper .close {
+  background-color: white;
+  border-left: 1px solid grey;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0 4px 0px 3px;
+  margin-left: -3px;
+}
+.avatar__fileInput__correction__wrapper .close:hover {
+  background-color: rgb(211, 211, 211);
+}
+.avatar__fileInput input {
+  color: transparent;
+  border: none;
+  position: relative;
+  visibility: hidden;
+  width: 250px;
+  height: 250px;
+}
+@media screen and (max-width: 766px) {
+  .avatar__fileInput input {
+    width: 200px;
+    height: 200px;
+  }
+}
+.avatar__fileInput input::before {
+  border-radius: 50%;
+  visibility: visible;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/camera.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 105px;
+  top: 80%;
+  z-index: 2;
+}
+@media screen and (max-width: 766px) {
+  .avatar__fileInput input::before {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .avatar__fileInput input::before {
+    left: 80px;
+    top: 70%;
+  }
+}
+.avatar__content {
+  height: 100%;
+  position: relative;
+}
+.avatar__content img {
+  z-index: 0;
+  height: 100%;
+}
+
+.editor {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 10;
+}
+.editor__content {
+  padding: 80px 20px 50px 20px;
+  width: 500px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(128, 128, 128, 0.8);
+}
+@media screen and (max-width: 1024px) {
+  .editor__content {
+    width: 250px;
+  }
+}
+.editor__content__tools {
+  margin-top: 5px;
+}
+.editor__content__tools__menager {
+  margin-top: 50px;
+  height: 10px;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .editor__content__tools__menager {
+    width: 225px;
+  }
+}
+.editor__content__tools__menager .buttons .btnCancel {
+  border: none;
+  padding: 5px 15px;
+  margin-right: 5px;
+  background-color: rgb(126, 126, 126);
+  border: 1px solid rgb(114, 114, 114);
+  border-radius: 5px;
+  color: white;
+  font-family: "cocoregular";
+}
+.editor__content__tools__menager .buttons button {
+  border: none;
+  padding: 5px 15px;
+  background-color: rgb(103, 200, 103);
+  border: 1px solid rgb(38, 146, 38);
+  border-radius: 5px;
+  color: white;
+  font-family: "cocoregular";
+}
+.editor__content::before {
+  position: absolute;
+  content: "Dopasuj zdjęcie";
+  left: 45px;
+  top: 25px;
+  font-family: "cocoregular";
+  font-size: 22px;
+  color: rgb(54, 54, 54);
+}
+@media screen and (max-width: 1024px) {
+  .editor__content::before {
+    left: 30px;
+  }
+}
+.editor__content__wrapper {
+  width: 450px;
+  height: 450px;
+  border: 1px solid rgb(128, 128, 128);
+  overflow: hidden;
+  position: relative;
+  cursor: move;
+}
+@media screen and (max-width: 1024px) {
+  .editor__content__wrapper {
+    width: 225px;
+    height: 225px;
+  }
+}
+.editor__content__wrapper__image {
+  display: flex;
+  justify-content: center;
+}
+.editor__content__wrapper__image__circle {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.editor__content__wrapper__image img {
+  z-index: 2;
+  height: 450px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .editor__content__wrapper__image img {
+    height: 225px;
+  }
+}
+
+@font-face {
+  font-family: cocolight;
+  src: url(../fonts/cocolight.ttf);
+}
+@font-face {
+  font-family: cocoregular;
+  src: url(../fonts/cocoregular.ttf);
+}
+body, html {
+  margin: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=index.css.map */

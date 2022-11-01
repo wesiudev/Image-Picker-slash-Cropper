@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;600&display=swap');
+.interfaceWrapper{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    nav{
+        width:30%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        font-family: 'cocoregular';
+        .mobileMenuOpen{
+            position:fixed;
+            right:40px;
+            bottom:120px;
+            border:1px solid rgb(104, 104, 104);
+            border-radius: 50%;
+            height:80px;
+            width:80px;
+            background-color: rgb(138, 138, 138);
+            font-size: 20px;
+            font-family: 'cocoregular';
+            color:rgb(255, 255, 255);
+        }    
+        @media screen and (max-width:1024px) {
+            background-color: white;
+            position:fixed;
+            z-index: 5;
+        }
+        
+        ul{
+            @media screen and (max-width:1024px) {
+                position:fixed;
+                bottom:150px;
+                right:22px;
+            }
+            width:300px;
+            position:absolute;
+            right:0;
+            margin-top: -10vh;
+            li{
+                @media screen and (max-width:1024px) {
+                    box-sizing: border-box;
+                    border-left: 1px solid rgba(128, 128, 128, 0.26); 
+                    border-right: 1px solid rgba(128, 128, 128, 0.26);
+                    background-color: white;
+                    width:250px;
+                    padding:0 40px 0 20px;
+                }
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                height:50px;
+                padding: 0 20px;
+                cursor: pointer;
+                border-top: 1px solid rgba(128, 128, 128, 0.26); 
+                &:hover{
+                    background-color: rgba(128, 128, 128, 0.11);
+                    @media screen and (max-width:1024px) {
+                        background-color: rgb(231, 231, 231);
+                    }
+                }
+                button{
+                    border:none;
+                    color:rgb(58, 58, 58);
+                    width:100%;
+                    height:100%;
+                    background-color: transparent;
+                    cursor: pointer;
+                    font-family: 'cocolight';
+                    font-size:15px;
+                    @media screen and (max-width:1024px) {
+                        text-align: right;
+                        border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+                    }
+                    text-align: right;
+                }
+                img{
+                    height:18px;
+                    margin-right: 3px;
+                }
+            }
+            .liCurrent{
+                border-left: 2px solid rgb(139, 146, 168);
+            }
+        }
+    }
+    .feed{
+        width:70%;
+        @media screen and (max-width:1024px) {
+            width:70%;
+            margin:0 auto;
+        }
+        &__basicValues{
+            @media screen and (max-width:1024px) {
+                border:none;
+            }
+            border-left: 1px solid rgba(128, 128, 128, 0.26);
+            display:flex;
+            flex-direction: column;
+            padding:5vh 5vh;
+            margin-top:70px;
+            .section0{
+                color: rgb(43, 43, 43);
+                .head{
+                    @media screen and (max-width:1024px) {
+                        flex-direction: column;
+                    }
+                    width:100%;
+                    display:flex;
+                    align-items: center;
+                    font-family: 'Signika', sans-serif;
+                    &__modalWrapper{
+                        width:250px;
+                    }
+                    &__userInfo{
+                        @media screen and (max-width:1024px) {
+                            margin-left: 7vh;
+                            width:100%;
+                        }
+                        margin-left: 10vh;
+                        h1{
+                            font-weight: 600;
+                            position: relative;
+                            &::before{
+                                position:absolute;
+                                top:7px;
+                                left:-28px;
+                                content: '';
+                                background-image: url('../images/userTransparent.png');
+                                height:23px;
+                                width:20px;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        &__phoneNumber{
+                            position: relative;
+                            &::before{
+                                position:absolute;
+                                top:3px;
+                                left:-40px;
+                                content: '+48';
+                                color:rgba(128, 128, 128, 0.5);
+                                font-size: 20px;
+                            }
+                        }
+                        &__email{
+                            position: relative;
+                            &::before{
+                                position:absolute;
+                                top:9px;
+                                left:-30px;
+                                content: '';
+                                background-image: url('../images/envelope.png');
+                                height:15px;
+                                width:20px;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                }
+                .interactions{
+                    @media screen and (max-width:1024px) {
+                        margin-top:4vh;
+                    }
+                    margin-top:10vh;
+                    height:100%;
+                    width:100%;
+                    h1{
+                        font-family: "cocoregular";
+                        font-size: 1.375vw;
+                        @media screen and (max-width:766px) {
+                            font-size: 3.75vw;
+                        }
+                        @media screen and (min-width: 767px) and (max-width:1366px) {
+                            font-size: 2.775vw;
+                        }
+                        @media screen and (min-width: 1024px) and (max-width: 1367px) {
+                            font-size: 2vw;
+                        }
+                    }
+                    h3{
+                        font-family: "cocolight";
+                        font-size: 0.975vw;
+                        @media screen and (max-width:766px) {
+                            font-size: 3.75vw;
+                        }
+                        @media screen and (min-width: 767px) and (max-width:1024px) {
+                            font-size: 2.375vw;
+                        }
+                        @media screen and (min-width: 1024px) and (max-width: 1367px) {
+                            font-size: 1.750vw;
+                        }
+                    }
+                    .smallAction{
+                        margin: -15px 0 15px 0;
+                        width:30px;
+                        height:10px;
+                        border: none;
+                        background-color: rgba(128, 128, 128, 0.164);
+                        position:relative;
+                        div{
+                            position:absolute;
+                            left:-8px;
+                            top:-5px;
+                            background-color: rgb(199, 183, 183);
+                            width:20px;
+                            height:20px;
+                            border-radius: 50%;
+                            transition:.3s;
+                        }
+                        .activated{
+                            background-color: rgb(86, 179, 86);
+                            left:17px;
+                            transition:.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

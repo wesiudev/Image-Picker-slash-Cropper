@@ -1,0 +1,10 @@
+@import 'userInterface.scss';
+@import 'header.scss';
+@import 'imageModal.scss';
+@font-face {font-family: cocolight;src: url(../fonts/cocolight.ttf);}
+@font-face {font-family: cocoregular;src: url(../fonts/cocoregular.ttf);}
+
+body,html{
+    margin:0;
+    box-sizing: border-box;
+}
