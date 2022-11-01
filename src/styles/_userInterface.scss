@@ -12,19 +12,34 @@
         position: relative;
         font-family: 'cocoregular';
         .mobileMenuOpen{
-            position:fixed;
-            right:40px;
-            bottom:120px;
-            border:1px solid rgb(104, 104, 104);
-            border-radius: 50%;
-            height:80px;
-            width:80px;
-            background-color: rgb(138, 138, 138);
-            font-size: 20px;
-            font-family: 'cocoregular';
-            color:rgb(255, 255, 255);
-        }    
+            visibility: hidden;
+        }
         @media screen and (max-width:1024px) {
+            .mobileMenuOpen{
+                visibility: visible;
+                position:fixed;
+                right:40px;
+                bottom:120px;
+                border:1px solid rgb(104, 104, 104);
+                border-radius: 50%;
+                height:80px;
+                width:80px;
+                background-color: rgb(138, 138, 138);
+                font-size: 20px;
+                font-family: 'cocoregular';
+                color:rgb(255, 255, 255);
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                span{
+                    margin:3px;
+                    border-radius: 5px;
+                    padding: 2px;
+                    width:35px;
+                    background-color: white;
+                }
+            }    
             background-color: white;
             position:fixed;
             z-index: 5;
@@ -73,6 +88,7 @@
                     font-size:15px;
                     @media screen and (max-width:1024px) {
                         text-align: right;
+                        font-family: 'cocoregular';
                         border-bottom: 1px solid rgba(128, 128, 128, 0.26);
                     }
                     text-align: right;
